@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0;
+font-size: 17px;
+line-height: 1.53;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+/* font-stretch: ultra-condensed; */
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto ;
+}
+ 
+.banner-part{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+/* height: 100vh; */
+position: relative;
+background: color url() repeat 50% 50% /cover;
+
+}        
+.banner-part::before{
+    content: '';
+    height: 100vh;
+    display: block;
+
+} 
+         
+.banner-part::after
+{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: #bf3d42;
+mix-blend-mode: darken;
+
+}     
+.bg-stretch{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 0;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.banner-content{
+position: relative;
+z-index: 9;
+width: 100%;
+max-width: 500px;
+text-align: center;
+color:#fff;
+}
+.banner-content p{
+ margin: 0 0  25px;
+}
+.overline-text{
+    text-transform: uppercase;
+    font-size: 34px;
+}
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    margin: 0 0 ;
+
+}
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 60px;
+    padding: 15px;
+
+}
+.btn.primary{
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    min-width: 240px;
+    border-radius: 30px;
+
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 15px 50px;
+}
+a{
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+     width: 25px;
+}
+#header.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo a img{
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 25px;
+    color: white;
+}
+.nav span{
+    display: block;
+}
+h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+    color: black;
+}
+.about-part{
+    padding: 120px 0;
+}
+.two-columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.two-columns .col{
+    width: 50%;
+}
+
+.about-part .image-wrap{
+    position: relative;
+    width: 500px;
+    height: 345px; 
+}

@@ -1,0 +1,33 @@
+*{
+    color: black;
+    
+}
+
+.holder{
+    background-color: brown;
+    border: 3px solid black;
+    width:  100%;
+    position: relative;
+    top:0px;
+    right:0px;
+}
+.tag{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 4px 5px 6px 7px;
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+.link{
+    
+    position: absolute;
+    z-index: 99;
+    transform:translate(25px,25px) ;
+}
+.left{
+    display: inline-block;
+}
