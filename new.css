@@ -85,6 +85,7 @@ h1{
     text-decoration: none;
     height: 60px;
     padding: 15px;
+    display: inline-block;
 
 }
 .btn.primary{
@@ -93,6 +94,16 @@ h1{
     border: 2px solid white;
     min-width: 240px;
     border-radius: 30px;
+
+}
+.btn.secondary{
+    padding: 15px;
+    background-color: #bf3d42;
+    border: 2px solid #bf3d42;
+    color: white;
+    min-width: 180px;
+    border-radius: 25px;
+    text-align: center;
 
 }
 #header{
@@ -131,19 +142,50 @@ h2{
     margin: 0 0 45px;
     color: black;
 }
+.style{
+    position: relative;
+    padding-left: 44px;
+}
+.style::after{
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url('./obj1.png') no-repeat center /cover;
+    display: block;
+}
 .about-part{
     padding: 120px 0;
 }
 .two-columns{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -20px;
 }
 .two-columns .col{
     width: 50%;
+    padding: 0 20px;
 }
 
 .about-part .image-wrap{
     position: relative;
-    width: 500px;
-    height: 345px; 
+    /* width: 500px;
+    height: 345px; */
+    padding-top: 69%; 
+    overflow: hidden;
+    border-radius: 23px;
 }
+.col span img{
+    height: 42px;
+    width: 42px;
+
+}
+.about-part p{
+    margin: 0;
+}
+.about-part .btn-wrap{
+    margin-top: 60px;
+}
+
