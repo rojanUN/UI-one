@@ -182,6 +182,12 @@ h2{
     width: 42px;
 
 }
+.two-columns .col.larg.col{
+    width:  58.333%;
+}
+.two-columns .col.small.col{
+    width: 41.666%;
+}
 .about-part p{
     margin: 0;
 }
