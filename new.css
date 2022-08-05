@@ -182,9 +182,13 @@ h3{
     width: 50%;
     padding: 0 20px;
 }
+.four-columns{
+    margin: 0 -10px;
+}
 .four-columns .col{
         width: auto;
         flex: 1;
+        padding: 0 10px;
 }
 
 .about-part .image-wrap{
@@ -233,9 +237,18 @@ h3{
     border-radius: 23px;
     overflow: hidden;
 }
-.product-detail .product-image{
+.products-part .col .product-image{
     height: 400px;
     position: relative;
+}
+.products-part .col:nth-child(2) .product-image{
+    height: 308px;
+}
+.products-part .col:nth-child(3) .product-image{
+    height: 250px;
+}
+.products-part .col:last-child .product-image{
+    height: 185px;
 }
 .product-content{
     padding: 0 20px 30px;
@@ -265,4 +278,11 @@ h3{
 }
 .product-detail h3{
     margin-bottom: 20px;
+}
+.products-part .btn-wrap{
+    padding: 15px 0;
+}
+.products-part .button.primary{
+    border-color: #b03d42;
+    text-transform: capitalize;
 }
